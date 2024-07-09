@@ -1,0 +1,29 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE0LCJuYW1lIjoiYWd1bmciLCJlbWFpbCI6ImFndW5nMTJAZ21haWwuY29tIiwiaWF0IjoxNzIwNDkzMzA4LCJleHAiOjE3MjA0OTMzMjN9.eHoDjxK1FiPdfU6qeUBv-mZWmDbznY68Jpj7KlUujFA
+
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+  "name": "agung",
+    "email": "agung12@gmail.com",
+    "password": "123456",
+    "confPassword": "123456"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "agung12@gmail.com",
+    "password": "123456"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE  http://localhost:5000/logout
